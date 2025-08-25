@@ -1,9 +1,9 @@
 # --------------------------------------------------
 #  基本网站信息
 # --------------------------------------------------
-title: Hanlin Cai   # 主站点标题（出现在浏览器选项卡和RSS中）
+title: Hanlin Cai # 主站点标题（出现在浏览器选项卡和RSS中）
 tagline: Here is personal website of Hanlin Cai. Powered by Jekyll, based on the Minimal Mistakes theme.  ＃可选的短标语，某些布局使用
-description: Two roads diverged in woods, I took the one less traveled by.  # 强烈建议使用SEO和社交卡
+description: Two roads diverged in woods, I took the one less traveled by. # 强烈建议使用SEO和社交卡
 
 # TIP ── For local development you can comment out `url`
 # and build with relative paths. In production you want this set.
@@ -15,10 +15,9 @@ description: Two roads diverged in woods, I took the one less traveled by.  # �
 owner:
   name: Hanlin Cai
   avatar: hanlin.jpg
-  ＃简历：梦想大，保持积极，努力工作并享受旅程。
+  # 简历：梦想大，保持积极，努力工作并享受旅程。
   email: hc663@cam.ac.uk
   cv: https://caihanlin.com/file/CV-HanlinCAI.pdf
-
 
   #社交网络链接在作者Bio侧边栏中使用。更新并根据需要删除。
   twitter: lancecai2002
@@ -34,14 +33,12 @@ owner:
   # lastfm:
   # tumblr:
 
-
 # --------------------------------------------------
 #  搜索引擎验证和分析
 # --------------------------------------------------
 google_verify: "SkiyuGpJOKT74vv5GmXLvYXXDkXy4v8VWPtbelYz3Hs"
 # bing_verify: ""    # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 # google_analytics: "G-XXXXXXX"                                 # GA-4 property ID
-
 
 # --------------------------------------------------
 #  顶级导航栏
@@ -61,22 +58,19 @@ links:
   - title: 中文
     url: /cn/
 
-
 # --------------------------------------------------
 #  构建和渲染选项
 # --------------------------------------------------
-timezone: Asia/Shanghai          # IANA时区ID（中国/北京无效）
-future: true                     # Render posts dated in the future
-highlighter: rouge               # 代码荧光笔；胭脂默认为mm
+timezone: Asia/Shanghai # IANA时区ID（中国/北京无效）
+future: true # Render posts dated in the future
+highlighter: rouge # 代码荧光笔；胭脂默认为mm
 # markdown: kramdown             # jekyll默认；武力的不满意
 # pygments: true                 # 旧式选项（Rouge取代此）
-
 
 # --------------------------------------------------
 #  永久链接结构
 # --------------------------------------------------
-permalink: /:categories/:title    # e.g. /tech/my-post/
-
+permalink: /:categories/:title # e.g. /tech/my-post/
 
 # --------------------------------------------------
 #  Kramdown（Markdown Engine）设置
@@ -95,13 +89,11 @@ kramdown:
   #   coderay_bold_every: 10
   #   coderay_css: class
 
-
 # --------------------------------------------------
 #  DISQUS COMMENT SYSTEM
 # --------------------------------------------------
 disqus:
   shortname: lancecai
-
 
 # include: [".htaccess"]
 # exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "minimal-mistakes.sublime-project", "minimal-mistakes.sublime-workspace"]
@@ -109,8 +101,8 @@ disqus:
 # --------------------------------------------------
 #  INCLUDE / EXCLUDE Lists
 # --------------------------------------------------
-include: [".htaccess"]           # Files to force-include in the build
-exclude:                         # Folders/files ignored during build
+include: [".htaccess"] # Files to force-include in the build
+exclude: # Folders/files ignored during build
   - "lib"
   - "config.rb"
   - "Capfile"
@@ -123,13 +115,12 @@ exclude:                         # Folders/files ignored during build
   - "minimal-mistakes.sublime-project"
   - "minimal-mistakes.sublime-workspace"
 
-
 # --------------------------------------------------
 #  OPTIONAL PLUG-INS (uncomment once gems are added)
 # --------------------------------------------------
 plugins:
-  - jekyll-feed          # Auto-generate RSS feed
-  - jekyll-sitemap       # Auto-generate sitemap.xml
-  - jekyll-seo-tag       # Adds SEO meta tags & JSON-LD
+  - jekyll-feed # Auto-generate RSS feed
+  - jekyll-sitemap # Auto-generate sitemap.xml
+  - jekyll-seo-tag # Adds SEO meta tags & JSON-LD
 #   - jekyll-picture-tag   # Responsive images & WebP/AVIF
-  # - jekyll-archives      # Year/month archive pages
+# - jekyll-archives      # Year/month archive pages
