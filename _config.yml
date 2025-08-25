@@ -28,7 +28,7 @@ owner:
   researchgate: https://www.researchgate.net/profile/Hanlin-Cai
   zhihu: https://www.zhihu.com/people/chlire
   xiaohongshu: 5c27848f0000000005030c6f
-  bilibili: 594030035
+  bilibili: 297285769
   # facebook: caihanlin2002
   # instagram: lancecai2002
   # lastfm:
@@ -44,8 +44,8 @@ google_verify: "SkiyuGpJOKT74vv5GmXLvYXXDkXy4v8VWPtbelYz3Hs"
 
 
 # --------------------------------------------------
-#  TOP NAVIGATION BAR
-#  `external: true` opens the link in a new tab.
+#  顶级导航栏
+#  `external: true` 在新标签中打开链接。
 # --------------------------------------------------
 links:
   - title: About Me
@@ -63,23 +63,23 @@ links:
 
 
 # --------------------------------------------------
-#  BUILD & RENDERING OPTIONS
+#  构建和渲染选项
 # --------------------------------------------------
-timezone: Asia/Shanghai          # IANA time-zone ID (China/Beijing is invalid)
+timezone: Asia/Shanghai          # IANA时区ID（中国/北京无效）
 future: true                     # Render posts dated in the future
-highlighter: rouge               # Code highlighter; Rouge is default in MM
-# markdown: kramdown             # Jekyll default; uncomment to force
-# pygments: true                 # Legacy option (Rouge supersedes this)
+highlighter: rouge               # 代码荧光笔；胭脂默认为mm
+# markdown: kramdown             # jekyll默认；武力的不满意
+# pygments: true                 # 旧式选项（Rouge取代此）
 
 
 # --------------------------------------------------
-#  PERMALINK STRUCTURE
+#  永久链接结构
 # --------------------------------------------------
 permalink: /:categories/:title    # e.g. /tech/my-post/
 
 
 # --------------------------------------------------
-#  KRAMDOWN (Markdown engine) SETTINGS
+#  Kramdown（Markdown Engine）设置
 # --------------------------------------------------
 kramdown:
   auto_ids: true
