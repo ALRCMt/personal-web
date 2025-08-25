@@ -1,9 +1,9 @@
 # --------------------------------------------------
 #  基本网站信息
 # --------------------------------------------------
-title: Hanlin Cai # 主站点标题（出现在浏览器选项卡和RSS中）
-tagline: Here is personal website of Hanlin Cai. Powered by Jekyll, based on the Minimal Mistakes theme.  ＃可选的短标语，某些布局使用
-description: Two roads diverged in woods, I took the one less traveled by. # 强烈建议使用SEO和社交卡
+title: ALRCMt # 主站点标题（出现在浏览器选项卡和RSS中）
+tagline: Here is personal website of ALRCMt.  ＃可选的短标语，某些布局使用
+description: To be, or not to be, that is the question. 
 
 # TIP ── For local development you can comment out `url`
 # and build with relative paths. In production you want this set.
@@ -13,20 +13,20 @@ description: Two roads diverged in woods, I took the one less traveled by. # 强
 # 作者 /个人资料数据
 # --------------------------------------------------
 owner:
-  name: Hanlin Cai
-  avatar: hanlin.jpg
+  name: ALRCMt
+  avatar: test.jpg
   # 简历：梦想大，保持积极，努力工作并享受旅程。
-  email: hc663@cam.ac.uk
-  cv: https://caihanlin.com/file/CV-HanlinCAI.pdf
+  email: alrcmt86@outlook.com
+  # cv: https://caihanlin.com/file/CV-HanlinCAI.pdf
 
   #社交网络链接在作者Bio侧边栏中使用。更新并根据需要删除。
-  twitter: lancecai2002
-  github: GuangLun2000
-  linkedin: hanlincai
-  scholar: https://scholar.google.com/citations?user=8igSoWgAAAAJ
-  researchgate: https://www.researchgate.net/profile/Hanlin-Cai
-  zhihu: https://www.zhihu.com/people/chlire
-  xiaohongshu: 5c27848f0000000005030c6f
+  # twitter: lancecai2002
+  github: ALRCMt
+  # linkedin: hanlincai
+  # scholar: https://scholar.google.com/citations?user=8igSoWgAAAAJ
+  # researchgate: https://www.researchgate.net/profile/Hanlin-Cai
+  zhihu: https://www.zhihu.com/people/alrcmt
+  # xiaohongshu: 5c27848f0000000005030c6f
   bilibili: 297285769
   # facebook: caihanlin2002
   # instagram: lancecai2002
@@ -90,7 +90,7 @@ kramdown:
   #   coderay_css: class
 
 # --------------------------------------------------
-#  DISQUS COMMENT SYSTEM
+#  DISQUS评论系统
 # --------------------------------------------------
 disqus:
   shortname: lancecai
@@ -99,10 +99,10 @@ disqus:
 # exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "minimal-mistakes.sublime-project", "minimal-mistakes.sublime-workspace"]
 
 # --------------------------------------------------
-#  INCLUDE / EXCLUDE Lists
+#  包括 /排除列表
 # --------------------------------------------------
-include: [".htaccess"] # Files to force-include in the build
-exclude: # Folders/files ignored during build
+include: [".htaccess"] # 文件迫使构建中的内容
+exclude: # 构建过程中忽略的文件夹/文件
   - "lib"
   - "config.rb"
   - "Capfile"
