@@ -2,34 +2,33 @@
 #  基本网站信息
 # --------------------------------------------------
 title: ALRCMt # 主站点标题（出现在浏览器选项卡和RSS中）
-tagline: Here is personal website of ALRCMt.  ＃可选的短标语，某些布局使用
+tagline: Here is personal website of ALRCMt.  # 可选的短标语，某些布局使用
 description: To be, or not to be, that is the question.
 
 # TIP ── For local development you can comment out `url`
 # and build with relative paths. In production you want this set.
-# url: https://caihanlin.com
-
+# url: https://
 # --------------------------------------------------
 # 作者 /个人资料数据
 # --------------------------------------------------
 owner:
   name: ALRCMt
   avatar: alrcmt.jpg
-  # 简历：梦想大，保持积极，努力工作并享受旅程。
+  # 简历
   email: alrcmt86@outlook.com
-  # cv: https://caihanlin.com/file/CV-HanlinCAI.pdf
+  # cv: https://caihanlin.com/file/
 
   #社交网络链接在作者Bio侧边栏中使用。更新并根据需要删除。
-  # twitter: lancecai2002
+  # twitter: 
   github: ALRCMt
-  # linkedin: hanlincai
-  # scholar: https://scholar.google.com/citations?user=8igSoWgAAAAJ
-  # researchgate: https://www.researchgate.net/profile/Hanlin-Cai
+  # linkedin: 
+  # scholar: https://scholar.google.com/
+  # researchgate: https://www.researchgate.net/
   zhihu: https://www.zhihu.com/people/alrcmt
-  # xiaohongshu: 5c27848f0000000005030c6f
+  # xiaohongshu: 
   bilibili: 483215864
-  # facebook: caihanlin2002
-  # instagram: lancecai2002
+  # facebook: 
+  # instagram: 
   # lastfm:
   # tumblr:
 
@@ -123,4 +122,4 @@ plugins:
   - jekyll-sitemap # Auto-generate sitemap.xml
   - jekyll-seo-tag # Adds SEO meta tags & JSON-LD
 #   - jekyll-picture-tag   # Responsive images & WebP/AVIF
-# - jekyll-archives      # Year/month archive pages
+# - jekyll-archives      # 年/月档案页
