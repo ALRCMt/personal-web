@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /MtENP-Build/index.html
+permalink: /mtenp-build/index.html
 title: 个人服务器搭建
 ---
 
