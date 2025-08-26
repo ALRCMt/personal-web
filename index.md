@@ -1,9 +1,11 @@
 ---
 layout: page
 permalink: /index.html
-title: About Me
+title: 主页
 ---
 
-# About Me
+# 主页绍介
+
+
 
 <br>

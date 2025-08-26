@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /blogs/index.html
-title: Blogs
+title: 占位
 ---
 
 ## Chinese Blogs 中文博客

@@ -2,7 +2,7 @@
 ---
 layout: page
 permalink: /cn/index.html
-title: 主页中文版
+title: 占位
 ---
 
 ## 关于我
