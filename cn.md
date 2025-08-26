@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /cn/index.html
+permalink: /aboutme/index.html
 title: 占位
 ---
 

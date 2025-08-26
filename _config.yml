@@ -55,8 +55,8 @@ links:
     url: /hobbies/
   - title: Blogs
     url: /blogs/
-  - title: 中文
-    url: /cn/
+  - title: 关于我
+    url: /aboutme/
 
 # --------------------------------------------------
 #  构建和渲染选项
