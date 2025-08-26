@@ -2,7 +2,7 @@
 #  基本网站信息
 # --------------------------------------------------
 title: ALRCMt # 主站点标题（出现在浏览器选项卡和RSS中）
-tagline: Here is personal website of ALRCMt.  # 可选的短标语，某些布局使用
+tagline: Here is personal website of ALRCMt. # 可选的短标语，某些布局使用
 description: To be, or not to be, that is the question.
 
 # TIP ── For local development you can comment out `url`
@@ -19,16 +19,17 @@ owner:
   # cv: https://caihanlin.com/file/
 
   #社交网络链接在作者Bio侧边栏中使用。更新并根据需要删除。
-  # twitter: 
+  # twitter:
   github: ALRCMt
-  # linkedin: 
+  # linkedin:
   # scholar: https://scholar.google.com/
   # researchgate: https://www.researchgate.net/
   zhihu: https://www.zhihu.com/people/alrcmt
-  # xiaohongshu: 
+  # xiaohongshu:
   bilibili: 483215864
-  # facebook: 
-  # instagram: 
+  # qq:
+  # facebook:
+  # instagram:
   # lastfm:
   # tumblr:
 
