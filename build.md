@@ -1009,40 +1009,48 @@ pve 的"更新>存储库"页面报错出现 "\u{200b}" 的字样
 至于报错 _没有启用 proxmox ve 存储库没有得到任何更新_
 忽视，反正也不更新
 
-## 08.BIOS时区错误
+## 08.BIOS 时区错误
 
-在设置自动开机的时候，我发现主板BIOS时间与PVE系统时间差了8小时  
+在设置自动开机的时候，我发现主板 BIOS 时间与 PVE 系统时间差了 8 小时  
 调查原因：  
-PVE默认将BIOS时间视为UTC时间，而上海时间（CST）是UTC+8，因此系统会自动将BIOS时间减去8小时以“对齐”时区
-解决方法：  
-``` shell
+PVE 默认将 BIOS 时间视为 UTC 时间，而上海时间（CST）是 UTC+8，因此系统会自动将 BIOS 时间减去 8 小时以“对齐”时区
+解决方法：
+
+```shell
 timedatectl set-local-rtc 1
 # 作用：直接设置硬件时钟（RTC）使用本地时间（上海时间），停止UTC转换
 ```
+
 验证命令：
-``` shell
+
+```shell
 timedatectl | grep "RTC in local TZ"
 # 若显示yes即生效
 ```
 
-## 09.PVE开机显示ZFS导入错误
+## 09.PVE 开机显示 ZFS 导入错误
 
-在将硬盘直通给TrueNAS后，PVE仍会尝试挂载ZFS，同时访问**可能**会导致**数据损坏**  
-所以应该确保 PVE 宿主机不主动挂载或导入该 ZFS 池，而是由 TrueNAS 虚拟机独占访问  
+在将硬盘直通给 TrueNAS 后，PVE 仍会尝试挂载 ZFS，同时访问**可能**会导致**数据损坏**  
+所以应该确保 PVE 宿主机不主动挂载或导入该 ZFS 池，而是由 TrueNAS 虚拟机独占访问
 
 立即导出 ZFS 池(如果已导入)
-``` shell
+
+```shell
 zpool export MtData
 ```
-因为我的PVE系统没有使用ZFS作为根文件系统，而是使用**LVM+ext4**  
-所以我直接简单粗暴，完全移除ZFS工具  
-``` shell
+
+因为我的 PVE 系统没有使用 ZFS 作为根文件系统，而是使用**LVM+ext4**  
+所以我直接简单粗暴，完全移除 ZFS 工具
+
+```shell
 sudo apt purge zfsutils-linux zfs-zed -y
 ```
 
-## 10.PVE降低功耗
-CPU电源策略调整：
-``` shell
+## 10.PVE 降低功耗
+
+CPU 电源策略调整：
+
+```shell
 # 安装 cpupower
 apt install linux-cpupower
 
@@ -1064,24 +1072,27 @@ cpupower -c all frequency-set -g powersave
 # 设置所有CPU为性能模式
 cpupower -c all frequency-set -g performance
 ```
-	
-|  电源模式  | 解释说明 |
-|  ----  | ----  |
-| performance  | 性能模式，将 CPU 频率固定工作在其支持的较高运行频率上，而不动态调节 |
-| userspace  | 系统将变频策略的决策权交给了用户态应用程序，较为灵活 |
-| powersave  | 省电模式，CPU 会固定工作在其支持的最低运行频率上 |
-| ondemand  | 按需快速动态调整 CPU 频率，没有负载的时候就运行在低频，有负载就高频运行 |
-| conservative  | 与 ondemand 不同，平滑地调整 CPU 频率，频率的升降是渐变式的，稍微缓和一点 |
-| schedutil  | 负载变化回调机制，后面新引入的机制，通过触发 schedutil sugov_update 进行调频动作 |
-``` shell
+
+| 电源模式     | 解释说明                                                                         |
+| ------------ | -------------------------------------------------------------------------------- |
+| performance  | 性能模式，将 CPU 频率固定工作在其支持的较高运行频率上，而不动态调节              |
+| userspace    | 系统将变频策略的决策权交给了用户态应用程序，较为灵活                             |
+| powersave    | 省电模式，CPU 会固定工作在其支持的最低运行频率上                                 |
+| ondemand     | 按需快速动态调整 CPU 频率，没有负载的时候就运行在低频，有负载就高频运行          |
+| conservative | 与 ondemand 不同，平滑地调整 CPU 频率，频率的升降是渐变式的，稍微缓和一点        |
+| schedutil    | 负载变化回调机制，后面新引入的机制，通过触发 schedutil sugov_update 进行调频动作 |
+
+```shell
 
 # 我这里设置CPU电源策略为模式conservative
 cpupower -c all frequency-set -g conservative
 
 ```
+
 设置机械硬盘休眠：
-编辑 /etc/rc.local，在exit 0之前加如下
-``` shell
+编辑 /etc/rc.local，在 exit 0 之前加如下
+
+```shell
 hdparm -B 192 /dev/sda   # 设置APM级别为192
 hdparm -S 240 /dev/sda   # 长时间不活动停转（20分钟）
 ```
