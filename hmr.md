@@ -17,7 +17,7 @@ title: H.M.R资料库
 <div align="CENTER">
   <img src="https://alrcmt.github.io//images/logo/hmr.jpg" alt="HSCR" width="150px"/>
 </div>
-
+<br />
 <div align="center">
   <h2 align="center">湖南马列毛资料库 (测试) H.M.R.<br />Hunan MLM Documents-Repository</h2>
 
