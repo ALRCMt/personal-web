@@ -11,7 +11,8 @@ title: H.M.R资料库
 所以暂不开放，我这里给一个文件列表，你自己看要什么文件联系我发你  
 点击下载：[文件列表.xlsx](https://raw.githubusercontent.com/ALRCMt/ALRCMt.github.io/refs/heads/main/file/%E6%96%87%E4%BB%B6%E5%88%97%E8%A1%A8.xlsx)
 
-_**以下是H.M.R.预主页**_
+
+**以下是H.M.R.预主页**
 
 
 <div align="CENTER">
