@@ -48,13 +48,11 @@ links:
   - title: 主页绍介
     url: /
   - title: 个人服务器搭建
-    url: /MtENP-Build/
-  - title: Awards
-    url: /awards/
-  - title: Hobbies
-    url: /hobbies/
-  - title: Blogs
-    url: /blogs/
+    url: /MtENP/
+  - title: H.M.R.书库
+    url: /hmr/
+  - title: 网址导航
+    url: /link/
   - title: 关于我
     url: /aboutme/
 
