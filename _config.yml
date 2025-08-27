@@ -47,12 +47,12 @@ google_verify: "SkiyuGpJOKT74vv5GmXLvYXXDkXy4v8VWPtbelYz3Hs"
 links:
   - title: 主页绍介
     url: /
-  - title: 个人服务器搭建
+  - title: 个人服务器介绍
     url: /MtENP/
+  - title: 搭建指南
+    url: /build/
   - title: H.M.R.书库
     url: /hmr/
-  - title: 网址导航
-    url: /link/
   - title: 关于我
     url: /aboutme/
 
