@@ -54,7 +54,7 @@ title: Mt-ENP搭建指南
     9.  [PVE 开机显示 ZFS 导入错误](#09pve%E5%BC%80%E6%9C%BA%E6%98%BE%E7%A4%BAzfs%E5%AF%BC%E5%85%A5%E9%94%99%E8%AF%AF)
     10. [PVE 降低功耗](#10pve%E9%99%8D%E4%BD%8E%E5%8A%9F%E8%80%97)
 
-# 硬件选择
+## 硬件选择
 
 **这里全部都是我的硬件配置，可以提供参考**
 
@@ -120,7 +120,7 @@ title: Mt-ENP搭建指南
 
 你需要一个 U 盘来烧录 pve 的磁盘镜像，作为物理机安装系统的启动盘
 
-# 其他条件
+## 其他条件
 
 ### 局域网
 
@@ -142,7 +142,7 @@ title: Mt-ENP搭建指南
 
 <br />
 
-# 系统配置
+## 系统配置
 
 **参考[@生火人 firemaker](https://github.com/firemakergk/aquar-build-helper?tab=readme-ov-file#%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85)**
 **主要是以下系统的安装与配置**
@@ -156,7 +156,7 @@ title: Mt-ENP搭建指南
 
 <br />
 
-## 安装 PVE ([Proxmox Virtual Environment](https://www.proxmox.com/en/downloads/category/proxmox-virtual-environment))
+### 安装 PVE ([Proxmox Virtual Environment](https://www.proxmox.com/en/downloads/category/proxmox-virtual-environment))
 
 **1.下载镜像**
 
@@ -190,7 +190,7 @@ PVE 安装完成后，首先在你的物理机屏幕上会显示出服务的 IP 
 
  <br />
  
-## 安装 TrueNAS ([TrueNAS scale](https://www.truenas.com/download-truenas-community-edition/))
+### 安装 TrueNAS ([TrueNAS scale](https://www.truenas.com/download-truenas-community-edition/))
 
 TrueNAS scale 相较于可以直接搭载 Docker 服务，虽然使用 PVE 这种虚拟化平台作为底层系统，但是 TrueNAS scale 能提供更多选择（其实就是我根本没看是 core 还是 scale
 
@@ -262,7 +262,7 @@ TrueNAS 安装成功后在局域网中使用浏览器打开提示中的地址应
 
 <br />
 
-## 安装 ubuntu ([Ubuntu Server](https://cn.ubuntu.com/download/server/step1))
+### 安装 ubuntu ([Ubuntu Server](https://cn.ubuntu.com/download/server/step1))
 
 **1.下载镜像**
 
@@ -300,7 +300,7 @@ Ubuntu Server 官方文档的安装指引：https://ubuntu.com/server/docs/insta
 
 ![](./photo/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-08-09%20122037.png)
 
-## 安装 Windows ([Windows10](https://www.microsoft.com/zh-cn/software-download/windows10)) _不需要_
+### 安装 Windows ([Windows10](https://www.microsoft.com/zh-cn/software-download/windows10)) _不需要_
 
 **1.下载镜像**
 
@@ -328,7 +328,7 @@ Win10 iso 镜像下载地址：https://www.microsoft.com/zh-cn/software-download
 
 <br />
 
-# 应用配置
+## 应用配置
 
 > 小提示：  
 > 在 Linux 系统中 Ctrl + Shift + C 复制； Ctrl + Shift + V: 粘贴  
@@ -336,9 +336,9 @@ Win10 iso 镜像下载地址：https://www.microsoft.com/zh-cn/software-download
 > 在 nano 编辑器中 Ctrl + W 快捷键是查找文本，但是与 web 界面关闭页面冲突，所以可以用 Ctrl + Q 代替，Ctrl + X 是退出，会询问是否保存
 > sudo 不能提升 cd 的权限
 
-## PVE 配置
+### PVE 配置
 
-### 1.设置 PVE 的 APT 源
+#### 1.设置 PVE 的 APT 源
 
 **8.x 版本设置**
 PVE 的默认软件源是他的企业服务地址，我们个人使用需要将其换成国内的软件源
@@ -405,7 +405,7 @@ Signed-By: /usr/share/keyrings/proxmox-archive-keyring.gpg
 
 > 如果修改 apt 源后报错，[解决方法](#06pve-%E6%9B%B4%E6%8D%A2-apt-%E6%BA%90%E5%90%8E%E6%8A%A5%E9%94%99)
 
-### 2.网络唤醒 WOL
+#### 2.网络唤醒 WOL
 
 需要在 BIOS 中开启 WOL 功能，各主板设置方法不同，自己上网查去  
 默认情况下，PVE 的网络唤醒是禁用的，需要手动打开才可以网络唤醒
@@ -453,7 +453,7 @@ chmod +x /etc/rc.local
 
 > 冷知识：蒲公英重启后，服务器第一次无开机法远程唤醒
 
-### 3.自动开关机
+#### 3.自动开关机
 
 自动开机：在主板 BIOS 设置唤醒事件管理，选择时间，我选择每天 9 点
 
@@ -471,14 +471,14 @@ crontab -e
 30 2 * * * /sbin/shutdown -h +5 "系统将在5分钟后关机进行日常维护，请保存您的工作"
 ```
 
-## 旁路由 R300A 配置
+### 旁路由 R300A 配置
 
-### 1.开启路由器的 WAN 口转发
+#### 1.开启路由器的 WAN 口转发
 
 打开贝锐蒲公英后台：https://www.pgybox.com/zh/intelligentNetwork/forwardingSettings  
 找到转发设置，打开 WAN 口入站路由转发
 
-### 2.配置异地组网
+#### 2.配置异地组网
 
 打开蒲公英管理平台：https://console.sdwan.oray.com/zh/main
 创建网络，添加硬件成员 R300A  
@@ -488,21 +488,21 @@ crontab -e
 
 贝锐蒲公英客户端下载：https://pgy.oray.com/download#visitor
 
-## TrueNAS 配置
+### TrueNAS 配置
 
-### 1.实现硬盘直通
+#### 1.实现硬盘直通
 
 教程地址：[pve 硬盘直通](https://github.com/firemakergk/aquar-build-helper/blob/master/details/pve%E7%A1%AC%E7%9B%98%E7%9B%B4%E9%80%9A.md)
 
 > 取消硬盘直通的方法  
 > pve 的 web 界面选择虚拟机的“硬件”，选择指定硬盘，点击“分离”
 
-### 2.配置存储池及用户设置
+#### 2.配置存储池及用户设置
 
 教程：  
 [【司波图】TrueNAS SCALE 教程，第一章——简单用起来](https://www.bilibili.com/video/BV1cK411z7dx/?spm_id_from=333.1007.top_right_bar_window_custom_collection.content.click&vd_source=2a55d6df129012c2f31dfcad634bc9de)
 
-### 3.SMB 共享配置
+#### 3.SMB 共享配置
 
 在 TrueNAS 的 Web 页面上进入共享页面  
 打开 Windows（SMB）共享服务  
@@ -527,7 +527,7 @@ _确认在用户配置创建的用户勾选了 SMB 用户选项_
 
 <img src="./photo/屏幕截图 2025-08-10 134441.png" alt="" width="300px"/>
 
-### 4.NFS 共享配置
+#### 4.NFS 共享配置
 
 > _注意！！！_  
 > _这里请配合 Ubuntu 挂载使用_
@@ -537,9 +537,9 @@ _确认在用户配置创建的用户勾选了 SMB 用户选项_
 如果想方便一点，选择配置服务，勾选允许非 root 挂载  
 之后操作在 Ubuntu 系统完成
 
-## Ubuntu 配置
+### Ubuntu 配置
 
-### 1.安装 Docker ~~_最折磨人的一集_~~(其实还好)
+#### 1.安装 Docker ~~_最折磨人的一集_~~(其实还好)
 
 ~~由于国内网络问题（最折磨），Docker 使用阿里云镜像源安装~~  
 目前 Docker 安装的网络问题得到了改善
@@ -559,7 +559,7 @@ docker version # 验证安装
 
 现在 Docker 已经安装完毕，但是拉取镜像的网络环境依旧~~十分~~很他妈糟糕，所以先不拉取 hello-world 测试，等会教学配置加速地址
 
-### 2.安装 Docker 可视化工具 DPanel
+#### 2.安装 Docker 可视化工具 DPanel
 
 DPanel 是一款**支持中文**的 Docker 可视化插件  
 使用如下命令下载 Dpanel lite 版镜像  
@@ -581,7 +581,7 @@ docker run -d --name dpanel --restart=always \
 DPanel 管理地址：Ubuntu 网络地址加端口 8807
 快速使用教程：[一款更适合国人的 Docker 可视化管理工具](https://www.bilibili.com/video/BV1gDc9eaEBv/?spm_id_from=333.337.search-card.all.click&vd_source=2a55d6df129012c2f31dfcad634bc9de)
 
-### 3.Docker 镜像仓库加速
+#### 3.Docker 镜像仓库加速
 
 **命令行加速**
 
@@ -607,7 +607,7 @@ DPanel 管理地址：Ubuntu 网络地址加端口 8807
 
 如果你要加速别的仓库，请**添加仓库**，然后配置加速，[可添加仓库](https://dpanel.cc/manual/image-registry)
 
-### 4.数据卷的创建、挂载、查看、删除
+#### 4.数据卷的创建、挂载、查看、删除
 
 挂载数据卷可能比较好操作  
 如果你偏爱用命令行操作，那么如下
@@ -637,7 +637,7 @@ docker run -it -v [数据卷名字]:[容器目录] [镜像名称]
 
 <img src="./photo/屏幕截图 2025-08-10 145806.png" alt="" width="300px"/>
 
-### 5.将 TrueNAS 存储池挂载到指定目录
+#### 5.将 TrueNAS 存储池挂载到指定目录
 
 > _注意！！！ 配合[NFS 共享配置](#4nfs-%E5%85%B1%E4%BA%AB%E9%85%8D%E7%BD%AE)、[数据卷的创建挂载](#4%E6%95%B0%E6%8D%AE%E5%8D%B7%E7%9A%84%E5%88%9B%E5%BB%BA%E6%8C%82%E8%BD%BD%E6%9F%A5%E7%9C%8B%E5%88%A0%E9%99%A4)使用，将存储池挂到数据卷的挂载点_
 
@@ -674,7 +674,7 @@ umount -f [mount_point]
 mount | grep nfs # 最后，检查挂载是否成功取消
 ```
 
-### 6.Docker 部署 Resilio Sync
+#### 6.Docker 部署 Resilio Sync
 
 通过 DPanel 图形化操作，打开容器列表，创建容器，然后拉取镜像，镜像地址`resilio/sync:latest`
 
@@ -696,7 +696,7 @@ mount | grep nfs # 最后，检查挂载是否成功取消
 Resilio Sync 管理地址：Ubuntu 网络地址加端口 8888  
 使用教程（更多还是自己摸索吧）：https://zhuanlan.zhihu.com/p/745919095
 
-### 7.Docker 部署 immich
+#### 7.Docker 部署 immich
 
 通过 Dpanel 图形化操作，使用 Docker Compose 部署
 
@@ -749,7 +749,7 @@ services:
 
 > 小贴士：上半夜 Docker Hub 的网络很差
 
-### 8.Docker 部署 V2rayA
+#### 8.Docker 部署 V2rayA
 
 **请确保你有可用稳定的代理地址**
 
@@ -785,7 +785,7 @@ services:
 然后回到首页，选择一个节点点击连接后，在点击左上角的启动按钮启动即可  
 <img src="./photo/屏幕截图 2025-08-17 231749.png" alt="" width="750px"/>
 
-### 9.配置代理
+#### 9.配置代理
 
 安装 proxychains 工具
 
@@ -820,7 +820,7 @@ proxychains curl https://www.google.com
 <img src="./photo/屏幕截图 2025-08-17 234722.png" alt="" width="550px"/>
 <br />
 
-### 10.Docker 部署 qBittorrent WebUI
+#### 10.Docker 部署 qBittorrent WebUI
 
 通过 Docker Compose 部署
 
@@ -861,7 +861,7 @@ services:
 
 怎么用自己搜去
 
-### 11.Docker 部署 OpenList
+#### 11.Docker 部署 OpenList
 
 OpenList 是 Alist 的社区版本，这里选择 OpenList
 
@@ -870,12 +870,12 @@ OpenList 是 Alist 的社区版本，这里选择 OpenList
 官方文档：https://openlistteam.github.io/docs/zh/
 使用教程网上一大把
 
-# 注意事项
+## 注意事项
 
 以下为我实际搭建过程中的一些“小问题”（并不）和小巧思
 <br />
 
-## 01.PVE 安装时卡死
+### 01.PVE 安装时卡死
 
 如果你有一张独立显卡，那么在安装 PVE 时可能会卡在 Loading Driver...，这是因为缺少显卡驱动导致的
 
@@ -897,7 +897,7 @@ OpenList 是 Alist 的社区版本，这里选择 OpenList
 
 将通过禁用图形化模块解决该问题
 
-## 02._PVE 网卡莫名其妙掉线问题 不确定_
+### 02._PVE 网卡莫名其妙掉线问题 不确定_
 
 ~~网上看到的原因基本是 intel 的网卡所致，怀疑是驱动兼容性问题~~
 有可能，不确定
@@ -924,7 +924,7 @@ iface vmbr0 inet static
 source /etc/network/interfaces.d/*
 ```
 
-## 03.ssh 功能开启问题
+### 03.ssh 功能开启问题
 
 因为 ubuntu 虚拟机的控制台与本机粘贴板不互通，又不想安装其它插件，于是打算用 windows 的 cmd 远程 ssh，但是 ubuntu 的 ssh 功能死活打不开，最终发现他妈的命令中是`ssh`而不是`sshd`
 
@@ -935,7 +935,7 @@ systemctl start ssh
 systemctl status ssh
 ```
 
-## 04.PVE8 概要面板显示 CPU 温度
+### 04.PVE8 概要面板显示 CPU 温度
 
 通过 shell 脚本自动配置，省时省力省心
 运行这段指令：
@@ -984,7 +984,7 @@ sensors
 
 <img src="./photo/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-08-09%20224901.png" alt="" width="700px"/>
 
-## 05.Ubuntu 空间仅占用一半
+### 05.Ubuntu 空间仅占用一半
 
 在安装 ubuntu server 的过程中，默认只占用一半磁盘空间，如果想补救如下
 
@@ -1000,7 +1000,7 @@ sensors
  df -h # 再次查看，确认文件系统的总空间大小调整成功
 ```
 
-## 06.PVE 更换 apt 源后报错
+### 06.PVE 更换 apt 源后报错
 
 在修改`/etc/apt/sources.list.d/debian.sources`后  
 pve 的"更新>存储库"页面报错出现 "\u{200b}" 的字样  
@@ -1009,7 +1009,7 @@ pve 的"更新>存储库"页面报错出现 "\u{200b}" 的字样
 至于报错 _没有启用 proxmox ve 存储库没有得到任何更新_
 忽视，反正也不更新
 
-## 07.C6-State 导致 PVE 崩溃
+### 07.C6-State 导致 PVE 崩溃
 
 不知道为什么 PVE 运行一段时间会莫名其妙崩溃，且系统日志没有记录  
 事后调查发现是**AMD Ryzen 1700X（初代锐龙/Zen 1）启用了 C6 State 模式自动节能卡死**  
@@ -1019,7 +1019,7 @@ https://forum.proxmox.com/threads/pve-6-raidz2-freeze-every-day-ryzen-7-1700.666
 
 解决方法：进入主板 bios，将**Global C-State Control**设置为 disabled
 
-## 08.BIOS 时区错误
+### 08.BIOS 时区错误
 
 在设置自动开机的时候，我发现主板 BIOS 时间与 PVE 系统时间差了 8 小时  
 调查原因：  
@@ -1038,7 +1038,7 @@ timedatectl | grep "RTC in local TZ"
 # 若显示yes即生效
 ```
 
-## 09.PVE 开机显示 ZFS 导入错误
+### 09.PVE 开机显示 ZFS 导入错误
 
 在将硬盘直通给 TrueNAS 后，PVE 仍会尝试挂载 ZFS，同时访问**可能**会导致**数据损坏**  
 所以应该确保 PVE 宿主机不主动挂载或导入该 ZFS 池，而是由 TrueNAS 虚拟机独占访问
@@ -1056,7 +1056,7 @@ zpool export MtData
 sudo apt purge zfsutils-linux zfs-zed -y
 ```
 
-## 10.PVE 降低功耗
+### 10.PVE 降低功耗
 
 CPU 电源策略调整：
 
