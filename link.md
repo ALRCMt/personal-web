@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /link/index.html
-title: 占位
+title: 网址导航
 ---
 
-## 占位
+## 网址导航

@@ -4,4 +4,4 @@ permalink: /hmr/index.html
 title: H.M.R书库
 ---
 
-## 占位
+## 未开放
