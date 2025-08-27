@@ -15,7 +15,7 @@ title: H.M.R资料库
 ### 预主页
 
 <div align="CENTER">
-  <img src="https://gitee.com/ALRCMt/mt-hmr-build/raw/master/image.svg" alt="HSCR" width="150px"/>
+  <img src="./images/logo/HMR.svg" alt="HSCR" width="150px"/>
 </div>
 
 <div align="center">
