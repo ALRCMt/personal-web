@@ -44,7 +44,6 @@ title: H.M.R资料库
 
 ## 写在阅读之前:致思考
 
-<div align="right">
 <p align="right">第五稿</p>
 </div>
 
@@ -62,8 +61,8 @@ title: H.M.R资料库
 
 以上，是我的希望，就当作序。
 
-   <div align="right"> 
-  <span align="right">ALRCMt
-   <br />2024.5.27夜
-   <br />于桃源</span>
-   </div>
+<span align="right">ALRCMt
+<br />2024.5.27 夜
+<br />于桃源</span>
+
+</div>
