@@ -16,7 +16,7 @@ title: 主页
 width="800" 
 height="450" 
 scrolling="no"
-border="0"
+border="0" 
 frameborder="no" 
 framespacing="0" 
 allowfullscreen="true"></iframe>
