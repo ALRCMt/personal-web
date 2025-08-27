@@ -15,7 +15,7 @@ title: H.M.R资料库
 ### 预主页
 
 <div align="CENTER">
-  <img src="./images/logo/HMR.svg" alt="HSCR" width="150px"/>
+  <img src="https://alrcmt.github.io//images/logo/HMR.svg" alt="HSCR" width="150px"/>
 </div>
 
 <div align="center">
