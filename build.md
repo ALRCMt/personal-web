@@ -1009,7 +1009,7 @@ pve 的"更新>存储库"页面报错出现 "\u{200b}" 的字样
 至于报错 _没有启用 proxmox ve 存储库没有得到任何更新_
 忽视，反正也不更新
 
-## 08.BIOS 时区错误
+## 08.BIOS时区错误
 
 在设置自动开机的时候，我发现主板 BIOS 时间与 PVE 系统时间差了 8 小时  
 调查原因：  
@@ -1028,7 +1028,7 @@ timedatectl | grep "RTC in local TZ"
 # 若显示yes即生效
 ```
 
-## 09.PVE 开机显示 ZFS 导入错误
+## 09.PVE开机显示ZFS导入错误
 
 在将硬盘直通给 TrueNAS 后，PVE 仍会尝试挂载 ZFS，同时访问**可能**会导致**数据损坏**  
 所以应该确保 PVE 宿主机不主动挂载或导入该 ZFS 池，而是由 TrueNAS 虚拟机独占访问
@@ -1046,7 +1046,7 @@ zpool export MtData
 sudo apt purge zfsutils-linux zfs-zed -y
 ```
 
-## 10.PVE 降低功耗
+## 10.PVE降低功耗
 
 CPU 电源策略调整：
 
