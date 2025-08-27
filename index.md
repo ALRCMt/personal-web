@@ -10,13 +10,8 @@ title: 主页
 
 那还说啥了兄弟，你直接先看个视频呗
 
-<iframe 
-  src="//player.bilibili.com/player.html?isOutside=true&aid=115088597982963&bvid=BV1mKeRziEmG&cid=31932285487&p=1&high_quality=1&danmaku=0&autoplay=0&muted=0"
-  allowfullscreen="allowfullscreen" 
-  width="100%" 
-  height="500" 
-  scrolling="no" 
-  frameborder="0" 
-  sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts">
-</iframe>
+
+
+<iframe src="//bilibili.com/blackboard/html5mobileplayer.html?isOutside=true&aid=115088597982963&bvid=BV1mKeRziEmG&cid=31932285487&p=1&high_quality=1&danmaku=0&autoplay=0&muted=0" width="800" height="450" scrolling='no' border='0' frameborder='no' framespacing='0' allowfullscreen='true'></iframe>
+
 <br>
