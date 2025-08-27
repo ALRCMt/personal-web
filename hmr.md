@@ -14,12 +14,13 @@ title: H.M.R资料库
 
 ### 以下为预主页
 
-<div align="CENTER">
+
+
 <img src="https://gitee.com/ALRCMt/mt-hmr-build/raw/master/image.svg" alt="HSCR" width="150px"/>
 
 </div>
-<div align="center">
-<h1 align="center">湖南马列毛资料库 (测试) H.M.R.<br />Hunan MLM Documents-Repository</h1>
+
+<h2>湖南马列毛资料库 (测试) H.M.R.<br />Hunan MLM Documents-Repository</h2>
 
 <p>这里是<strong>"湖南马列毛"</strong>资料库，由一名湖南学生整理
 
@@ -40,11 +41,10 @@ title: H.M.R资料库
 
 本库旨在帮助像我一样的广大同志系统了解**社会主义**，了解**马列毛主义**，及各种科学的、进步的思想，因而收集了各种文章与资料以及来源途径等。我并不是有意复制如[中马库](https://www.marxists.org)等网站，我 ™ 文件整理到一半，才发现这类网站，然后就准备放弃。但转念一想，本库收编的当代各类社会评论文章是网站其他不曾有的。有人说电影是一把刀，切出背景世界的剖面，尽管它很短，很片面，但已经暴露了最经典最主要的矛盾，我觉得社会评论也是一把刀，切开了时代的剖面，各类文章评论，很杂、很乱，可能你根本就觉得这啥玩意不是，但我还是祝愿你能从这个剖面获取知识，洞察到时代的深层矛盾。
 
-<hr />
 
 ## 写在阅读之前:致思考
 
-<p align="right">第五稿</p>
+<p>第五稿</p>
 </div>
 
 尽管是为学习**马列毛**所建，本库仍收录了许多不同论调甚至偏向极端的文章、著作，皆不作删改，请各位批判看到待
@@ -61,7 +61,7 @@ title: H.M.R资料库
 
 以上，是我的希望，就当作序。
 
-<span align="right">ALRCMt
+<span>ALRCMt
 <br />2024.5.27 夜
 <br />于桃源</span>
 
