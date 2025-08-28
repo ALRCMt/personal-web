@@ -26,13 +26,14 @@ title: 关于我
 **不是小男娘** **不是小男娘** **不是小男娘**
 
 
-装机线是不理的  
+
+<i>装机线是不理的</i>  
 <img src="https://alrcmt.github.io/images/server_open.jpg" width="280px">
 
-代码是懒得写的  
+<i>代码是懒得写的</i>  
 ![ALRCMt's GitHub stats](https://github-readme-stats.vercel.app/api?username=ALRCMt&show_icons=true&theme=cobalt)
 
-塔学造诣是没有的  
+<i>塔学造诣是没有的</i>  
 <img src="https://alrcmt.github.io/images/ban.png" alt="账号已封禁">
 
 <hr />
