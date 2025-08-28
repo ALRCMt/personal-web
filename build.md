@@ -9,6 +9,7 @@ title: Mt-ENP搭建指南
 ## 目录
 
 **因为教程有点多，所以学会看目录好不好？**
+<hr />
 
 1.  [**硬件选择**](#%E7%A1%AC%E4%BB%B6%E9%80%89%E6%8B%A9)
 2.  [**其他条件**](#%E5%85%B6%E4%BB%96%E6%9D%A1%E4%BB%B6)
@@ -54,7 +55,9 @@ title: Mt-ENP搭建指南
     9.  [PVE 开机显示 ZFS 导入错误](#09pve%E5%BC%80%E6%9C%BA%E6%98%BE%E7%A4%BAzfs%E5%AF%BC%E5%85%A5%E9%94%99%E8%AF%AF)
     10. [PVE 降低功耗](#10pve%E9%99%8D%E4%BD%8E%E5%8A%9F%E8%80%97)
 
+
 ## 硬件选择
+<hr />
 
 **这里全部都是我的硬件配置，可以提供参考**
 
@@ -121,6 +124,7 @@ title: Mt-ENP搭建指南
 你需要一个 U 盘来烧录 pve 的磁盘镜像，作为物理机安装系统的启动盘
 
 ## 其他条件
+<hr />
 
 ### 局域网
 
@@ -143,6 +147,7 @@ title: Mt-ENP搭建指南
 <br />
 
 ## 系统配置
+<hr />
 
 **参考[@生火人 firemaker](https://github.com/firemakergk/aquar-build-helper?tab=readme-ov-file#%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85)**
 **主要是以下系统的安装与配置**
@@ -329,6 +334,7 @@ Win10 iso 镜像下载地址：https://www.microsoft.com/zh-cn/software-download
 <br />
 
 ## 应用配置
+<hr />
 
 > 小提示：  
 > 在 Linux 系统中 Ctrl + Shift + C 复制； Ctrl + Shift + V: 粘贴  
@@ -871,6 +877,7 @@ OpenList 是 Alist 的社区版本，这里选择 OpenList
 使用教程网上一大把
 
 ## 注意事项
+<hr />
 
 以下为我实际搭建过程中的一些“小问题”（并不）和小巧思
 <br />
