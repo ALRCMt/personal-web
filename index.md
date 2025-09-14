@@ -34,7 +34,7 @@ v我50 v我50 v我50 v我50 v我50 v我50 v我50 v我50
 图吧初级垃圾佬，海鲜平台学生党  
 
 - 鉴证不说话，理论水平低(哎woc 哲逼怎么这么坏)  
-- 不曾熟练掌握任何计算机语言，ctrl+c太好用了你知道吗(哎woc \u{200b}怎么这么坏)  
+- 不曾熟练掌握任何计算机语言，ctrl+c太好用了你知道吗<br />(哎woc \u{200b}怎么这么坏)  
 
 > <b>重大新闻：<i>不是小男娘 不是小男娘 不是小男娘</i></b>
 
@@ -44,7 +44,7 @@ v我50 v我50 v我50 v我50 v我50 v我50 v我50 v我50
 <img src="https://alrcmt.github.io/images/server_open.jpg" width="280px">
 
 <i>代码是懒得写的（截止2025.9）</i>  
-<img src="https://alrcmt.github.io/images/stats.png" alt="stats">
+<img src="https://alrcmt.github.io/images/stats.png" alt="stats" width="300px">
 
 <i>塔学造诣是没有的</i>  
 <img src="https://alrcmt.github.io/images/ban.png" alt="账号已封禁">
