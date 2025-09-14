@@ -63,7 +63,7 @@ HMR(显然服务没有开)
 <img src="https://alrcmt.github.io/images/hmr_data.png" width="650px">
 
 服务器外观（手办是蕾娜，随便买的便宜货）  
-<img src="https://alrcmt.github.io/images/server_over.png" height="400px">
+<img src="https://alrcmt.github.io/images/server_over.png" width="400px">
 
 服务器web  
 <img src="https://alrcmt.github.io/images/MtENP_web.png" >
