@@ -7,8 +7,8 @@ title: 个人服务器介绍
 ## MtAIO 系统介绍
 
 <hr />
- 这里看着很怪，我正在重新做网站
- guihub观感更好：
+ 这里看着很怪，我正在重新做网站  
+ guihub观感更好:  
  https://github.com/ALRCMt/MtAIO-Build
 <hr />
 
