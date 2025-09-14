@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /build/index.html
-title: Mt-ENP搭建指南
+title: Mt-AIO搭建指南
 ---
 <hr />
 建议在GitHub上查看：
