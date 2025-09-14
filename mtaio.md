@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /MtENP/index.html
+permalink: /MtAIO/index.html
 title: 个人服务器介绍
 ---
 
