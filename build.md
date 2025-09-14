@@ -3,6 +3,11 @@ layout: page
 permalink: /build/index.html
 title: Mt-ENP搭建指南
 ---
+<hr />
+建议在GitHub上查看：
+
+https://github.com/ALRCMt/MtAIO-Build
+<hr />
 
 本指南作为我自己摸索学习的记录，借鉴了https://github.com/firemakergk/aquar-build-helper 的内容
 
