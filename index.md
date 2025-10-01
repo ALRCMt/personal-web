@@ -1,9 +1,9 @@
 ---
 layout: home
-title: 关于 ALRCMt
+title: 主页
 permalink: /
 ---
-<img border-radius="50%" src="./images/fav.png" alt="ALRCMt" width="150px"/>
+<img src="./images/fav.png" alt="ALRCMt" width="150px"/>
 
 <b>ALRCMt 的个人网站！:)</b>
 
