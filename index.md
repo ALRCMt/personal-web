@@ -4,11 +4,12 @@ title: 关于 ALRCMt
 permalink: /
 ---
 <img border-radius="50%" src="./images/fav.png" alt="ALRCMt" width="150px"/>
-<b>ALRCMt 的个人网站</b>
 
-<table width="100px">
+<b>ALRCMt 的个人网站！:)</b>
+
+<table width="50px">
 <tr>
-<th colspan=2>为什么不给我打钱😡😡😡?!</th>
+<th colspan=2>疯狂星期四，v我50</th>
 </tr>
 <tr>
 <th><a href="./images/wxlll.jpg" target="_blank"><img width="50" height="50" src="./images/wechatpay.png"></a></th>
@@ -20,11 +21,13 @@ v我50 v我50 v我50 v我50 v我50 v我50 v我50 v我50
 
 <hr />
 
-一个铸币高中生而已，特长是非人类  
-图吧初级垃圾佬，海鲜平台学生党  
+鉴证大舞台有种你就来，没种我也来，只不过我只站着看而已  
+沉默看书，QQ、B站、知乎、TG、X通通不辩经（哎哲逼怎么这么坏）  
+理科生理论水平低低低低（我看文科生也没好到哪里去）  
 
-- 鉴证不说话，理论水平低(哎woc 哲逼怎么这么坏)  
-- 不曾熟练掌握任何计算机语言，ctrl+c太好用了你知道吗<br />(哎woc \u{200b}怎么这么坏)  
+装机入门水平，玩玩NAS、软路由，平时折腾折腾Liunx、PVE  
+不曾熟练掌握任何计算机语言，极不熟练使用JavaScript  
+ctrl+c太好用了你知道吗 （哎\u{200b}怎么这么坏）
 
 > <b>重大新闻：<i>不是小男娘 不是小男娘 不是小男娘</i></b>
 
