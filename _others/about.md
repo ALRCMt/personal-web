@@ -9,7 +9,7 @@ layout: post
 <img src="/images/fav.png" alt="ALRCMt" width="150px"/>
 
 <b>我的github账号</b>  
-**https://github.com/ALRCMt**
+https://github.com/ALRCMt
 
 [![QQ](https://img.shields.io/badge/QQ-ALRCMt-white.svg)](https://qm.qq.com/q/4uVkK9nRPW?personal_qrcode_source=3)
 [![邮箱](https://img.shields.io/badge/邮箱-b122330417@163.com-blue.svg)](mailto:b122330417@163.com)
