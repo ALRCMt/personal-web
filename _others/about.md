@@ -8,8 +8,8 @@ layout: post
 
 <img src="/images/fav.png" alt="ALRCMt" width="150px"/>
 
-<b>我的github账号
-https://github.com/ALRCMt </b>
+<b>我的github账号</b>  
+**https://github.com/ALRCMt**
 
 ![ALRCMt's GitHub stats](https://github-readme-stats.vercel.app/api?username=ALRCMt&rank_icon=percentile&theme=radical)
 
