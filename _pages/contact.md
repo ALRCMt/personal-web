@@ -1,9 +1,11 @@
 ---
-title: Contact
-author: Tao He
-date: 2022-02-05
-category: Jekyll
+title: 草稿（垃圾话
+author: ALRCMt
+date: 2025-10-01
+category: tyyz
 layout: post
 ---
 
-This is an contact page.
+<h3>哦，对了 桃源一中，我草饲你的马</h3>
+
+<img src="./images/tyyz.jpg" alt="TYYZSM">
