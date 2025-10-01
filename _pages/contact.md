@@ -2,7 +2,7 @@
 title: 草稿（垃圾话
 author: ALRCMt
 date: 2025-10-01
-category: jeykll
+category: Jekyll
 layout: post
 ---
 

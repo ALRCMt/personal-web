@@ -1,8 +1,8 @@
 ---
 title: Apache2
 author: ALRCMt
-date: 2025-10-02
-category: jeykll
+date: 2025-10-01
+category: Jekyll
 layout: post
 ---
 
