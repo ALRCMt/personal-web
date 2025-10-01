@@ -1,17 +1,12 @@
 ---
 layout: home
-title: About ALRCMt
+title: 关于 ALRCMt
 permalink: /
 ---
+<img src="./images/fav.png" alt="ALRCMt" width="150px"/>
+<b>ALRCMt 的个人网站</b>
 
-## 主页绍介
-
-
- <img src="https://alrcmt.github.io/images/logo/hmr.jpg" alt="HSCR" width="150px"/>
-
-**ALRCMt 的个人网站**
-
-<tabl width="100px">
+<table width="100px">
 <tr>
 <th colspan=2>为什么不给我打钱😡😡😡?!</th>
 </tr>
