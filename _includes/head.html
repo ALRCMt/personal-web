@@ -8,6 +8,27 @@
 {%- endif -%}
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<script>
+  // 立即设置深色模式，不等待 DOMContentLoaded
+  (function() {
+    const fontState = localStorage.getItem(':fontState');
+    if (!fontState) {
+      localStorage.setItem(':fontState', JSON.stringify({
+        size: 2,
+        family: 1,
+        theme: 2
+      }));
+    } else {
+      const state = JSON.parse(fontState);
+      if (state.theme !== 2) {
+        state.theme = 2;
+        localStorage.setItem(':fontState', JSON.stringify(state));
+      }
+    }
+  })();
+</script>
+
 <meta name="description" content="{{site.description}}">
 
 {%- if site.gitbook_version -%}
