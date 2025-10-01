@@ -24,6 +24,12 @@ toc:
 # customize the link favicon in header, will be {{site.baseurl}}/{{site.favicon_path}}
 favicon_path:     /assets/gitbook/images/favicon.ico
 
+# 添加到现有配置中
+gitbook:
+  default_theme: 2  # 深色模式
+  default_font_size: 2
+  default_font_family: 1
+
 # markdown render engine.
 markdown:         kramdown
 kramdown:
@@ -74,9 +80,3 @@ plugins:
   - jemoji
 
 
-  # 添加到您的 _config.yml 中
-gitbook:
-  theme: 2
-  
-# 或者尝试
-theme_variant: 2
