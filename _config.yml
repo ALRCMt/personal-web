@@ -72,3 +72,11 @@ plugins:
   - jekyll-feed
   - jekyll-readme-index
   - jemoji
+
+
+  # 添加到您的 _config.yml 中
+gitbook:
+  theme: dark
+  
+# 或者尝试
+# theme_variant: dark
