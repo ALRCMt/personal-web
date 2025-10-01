@@ -36,8 +36,7 @@ Ctrl+C太好用了你知道吗 （哎\u{200b}怎么这么坏）
 > <b>重大提示：
 > <i>我不是男娘 不OD 不改花刀</i></b>
 
-
-
+<hr />
 <i>装机线是不理的</i>  
 <img src="./images/server_open.jpg" width="280px">
 
