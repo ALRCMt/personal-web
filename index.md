@@ -16,7 +16,7 @@ permalink: /
 <th colspan=2>为什么不给我打钱😡😡😡?!</th>
 </tr>
 <tr>
-<th><a href="./images/wxlll.jpg"><img width="50" height="50" src="./images/wechatpay.png"></a></th>
+<th><a href="./images/wxlll.jpg" target="_blank"><img width="50" height="50" src="./images/wechatpay.png"></a></th>
 <th>我，Mt 打钱 懂？</th>
 </tr>
 </table>
