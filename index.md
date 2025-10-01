@@ -6,16 +6,12 @@ permalink: /
 
 ## 主页绍介
 
+
+ <img src="https://alrcmt.github.io/images/logo/hmr.jpg" alt="HSCR" width="150px"/>
+
 **ALRCMt 的个人网站**
 
-<hr />
-
-
-
-<hr />
-
-
-<table>
+<tabl width="100px">
 <tr>
 <th colspan=2>为什么不给我打钱😡😡😡?!</th>
 </tr>
