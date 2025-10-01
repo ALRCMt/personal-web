@@ -1,9 +1,10 @@
 ---
-title: About others
-author: Tao He
-date: 2022-02-04
+title: 关于
+author: ALRCMt
+date: 2025-10-01
 category: Jekyll
 layout: post
 ---
 
-This is an about page for "others" in the collections.
+本网站的GitHub开源仓库
+
