@@ -1,5 +1,5 @@
 # Configurations
-title:            主
+title:            ALRCMt个人网站
 longtitle:        主页
 author:           ALRCMt
 email:            b122330417@163.com
@@ -54,9 +54,6 @@ collections:
     output: true
     permalink: /:collection/:path/
   others:
-    output: true
-    permalink: /:collection/:path/
-  tetxs:
     output: true
     permalink: /:collection/:path/
 
