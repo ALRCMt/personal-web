@@ -1,5 +1,10 @@
+---
+layout: home
+title: Index
+permalink: /
+---
 
-Make Jelly site have a GitBook look!
+index
 
 ## Demo
 
