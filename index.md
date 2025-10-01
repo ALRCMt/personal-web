@@ -7,7 +7,7 @@ permalink: /
 
 <b>ALRCMt 的个人网站！:)</b>
 
-<table width="50px">
+<table width="400">
 <tr>
 <th colspan=2>疯狂星期四，v我50</th>
 </tr>
