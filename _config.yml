@@ -1,16 +1,16 @@
 # Configurations
-title:            Jekyll Gitbook
-longtitle:        Jekyll Gitbook
-author:           HE Tao
-email:            sighingnow@gmail.com
+title:            ALRCMt Web
+longtitle:        ALRCMt Web
+author:           ALRCMt
+email:            b122330417@163.com
 description: >
-  Build Jekyll site with the GitBook style.
+  ALRCMt build Jekyll site with the GitBook style now.
 
 version:          1.0
 gitbook_version:  3.2.3
 
-url:              'https://sighingnow.github.io'
-baseurl:          '/jekyll-gitbook'
+url:              'https://alrcmt.github.io'
+baseurl:          '/personal-web'
 rss:              RSS
 
 # bootstrap: use the remote theme for the site itself
