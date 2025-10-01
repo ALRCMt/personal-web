@@ -10,7 +10,7 @@ layout: post
 
 
 **我的github账号**
-<a herf="https://github.com/ALRCMt">https://github.com/ALRCMt</a>
+<b><a herf="https://github.com/ALRCMt">https://github.com/ALRCMt</a></b>
 
 
 [![QQ](https://img.shields.io/badge/QQ-ALRCMt-white.svg)](https://qm.qq.com/q/4uVkK9nRPW?personal_qrcode_source=3)
