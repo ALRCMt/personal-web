@@ -8,5 +8,5 @@ layout: post
 
 本网站的GitHub开源仓库
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=ALRCMt&repo=personal-web)](https://github.com/anuraghazra/github-readme-stats)
+![Customized Card](https://github-readme-stats.vercel.app/api/pin?username=ALRCMt\&repo=personal-web\&title_color=fff\&icon_color=f9f9f9\&text_color=9f9f9f\&bg_color=151515\&show_owner=true)
 
