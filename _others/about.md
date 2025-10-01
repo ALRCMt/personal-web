@@ -8,3 +8,4 @@ layout: post
 
 本网站的GitHub开源仓库
 
+https://gh-card.dev/repos/ALRCMt/personal-web.svg?fullname=
