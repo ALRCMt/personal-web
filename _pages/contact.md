@@ -9,3 +9,5 @@ layout: post
 <h4>哦，对了 桃源一中，我草饲你的马</h4>
 
 <img src="/images/tyyz.jpg" alt="TYYZSM">
+
+<iframe src="http://www.tyyz.com.cn/gohome" width="700px"  frameborder="0"></iframe>

@@ -16,8 +16,6 @@ permalink: /
 <th>我，Mt 打钱 懂？</th>
 </tr>
 </table>
-v我50 v我50 v我50 v我50 v我50 v我50 v我50 v我50  
-v我50 v我50 v我50 v我50 v我50 v我50 v我50 v我50
 
 <hr />
 
