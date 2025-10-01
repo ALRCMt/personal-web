@@ -10,4 +10,4 @@ layout: post
 
 <img src="/images/tyyz.jpg" alt="TYYZSM">
 
-<iframe src="http://www.tyyz.com.cn/gohome" height="2000px" width="1000px" frameborder="0"></iframe>
+<iframe style="transform: scale(0.5)" src="http://www.tyyz.com.cn/gohome" height="2000px" width="1500px" frameborder="0"></iframe>
