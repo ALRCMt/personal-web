@@ -4,6 +4,7 @@ author: ALRCMt
 date: 2025-10-01
 category: Jekyll
 layout: post
+cover: \images\hero.gif
 ---
 
 <img src="/images/fav.png" alt="ALRCMt" width="150px"/>
