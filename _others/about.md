@@ -8,4 +8,4 @@ layout: post
 
 本网站的GitHub开源仓库
 
-<object type="image/svg+xml" data="https://gh-card.dev/repos/ALRCMt/personal-web.svg?fullname=&link_target=_blank"></object>
+![ALRCMt Card](https://github-readme-stats.vercel.app/api/pin?username=ALRCMt\&repo=personal-web\&title_color=fff\&icon_color=f9f9f9\&text_color=9f9f9f\&bg_color=151515)
