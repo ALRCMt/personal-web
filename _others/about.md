@@ -8,6 +8,5 @@ layout: post
 
 本网站的GitHub开源仓库
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=github-readme-stats)](https://github.com/anuraghazra/github-readme-stats)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=ALRCMt&repo=personal-web)](https://github.com/anuraghazra/github-readme-stats)
 
-<img src="/images/tyyz.jpg" alt="">
