@@ -29,8 +29,7 @@ permalink: /
 <img src="/images/psc.jpg" alt="喜报" width="300px">  
 不曾熟练掌握任何计算机语言，极不熟练使用JavaScript 
 无论写什么都要De一周Bug
-
-<img src="https://github.com/ALRCMt/MtAIO-Build/blob/cb99109050678a8dc9f7933bb70bc5681e4f1084/photo/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-08-16%20161707.png" width="280px"> 
+<img src="https://raw.githubusercontent.com/ALRCMt/MtAIO-Build/cb99109050678a8dc9f7933bb70bc5681e4f1084/photo/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-08-16%20161707.png" width="280px">  
 
 Ctrl+C太好用了你知道吗 （哎\u{200b}怎么这么坏）
 
