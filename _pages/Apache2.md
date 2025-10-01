@@ -1,5 +1,5 @@
 ---
-title: Apache2
+title: License
 author: ALRCMt
 date: 2025-10-01
 category: Jekyll
