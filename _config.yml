@@ -76,7 +76,7 @@ plugins:
 
   # 添加到您的 _config.yml 中
 gitbook:
-  theme: dark
+  theme: night
   
 # 或者尝试
-# theme_variant: dark
+theme_variant: night
