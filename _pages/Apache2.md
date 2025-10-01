@@ -1,5 +1,5 @@
 ---
-title: License
+title: Apache2
 author: ALRCMt
 date: 2025-10-02
 category: jeykll
