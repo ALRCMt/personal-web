@@ -19,13 +19,13 @@ permalink: /
 
 <hr />
 
-鉴证大舞台有种你就来，没种我也来，我不过只是看着沉沦而已
+鉴证大舞台有种你就来，没种我也来，我不过只是看着沉沦而已  
 <img src="/images/mhyyyy.png" alt="沉痛悼念米指导" height="200px">
 
 沉默看书，QQ、B站、知乎、TG、X通通不辩经（哎哲逼怎么这么坏）  
 理科生理论水平低低低低（我看文科生也没好到哪里去）  
 
-装机入门水平，玩玩NAS、软路由，平时折腾折腾Liunx、PVE
+装机入门水平，玩玩NAS、软路由，平时折腾折腾Liunx、PVE  
 <img src="/images/psc.jpg" alt="喜报" width="300px">
 不曾熟练掌握任何计算机语言，极不熟练使用JavaScript 
 无论写什么都要De一周Bug， 
