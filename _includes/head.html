@@ -7,19 +7,6 @@
     <title>{{ site.title | escape }}</title>
 {%- endif -%}
 
-<script>
-  // 检查是否已经存在字体设置
-  if (!localStorage.getItem(':fontState')) {
-    // 如果不存在，则设置为深色模式
-    var defaultState = {
-      size: 2,
-      family: 1,
-      theme: 2
-    };
-    localStorage.setItem(':fontState', JSON.stringify(defaultState));
-  }
-</script>
-
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
 <meta name="description" content="{{site.description}}">
@@ -84,3 +71,16 @@
     {%- endif -%}
 
 {%- endif -%}
+
+<script>
+  // 检查是否已经存在字体设置
+  if (!localStorage.getItem(':fontState')) {
+    // 如果不存在，则设置为深色模式
+    var defaultState = {
+      size: 2,
+      family: 1,
+      theme: 2
+    };
+    localStorage.setItem(':fontState', JSON.stringify(defaultState));
+  }
+</script>
