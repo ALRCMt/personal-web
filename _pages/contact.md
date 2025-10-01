@@ -7,7 +7,7 @@ layout: post
 cover: \images\hero.gif
 ---
 
-**国内技术平台是煞笔，谁用谁煞笔**
+**国内技术平台是煞笔，谁用谁煞笔**  
 <img src="/images/sm.jpg" alt="SM" width="400px">
 
 <hr />
