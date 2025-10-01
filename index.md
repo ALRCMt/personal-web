@@ -59,7 +59,7 @@ ctrl+c太好用了你知道吗 （哎\u{200b}怎么这么坏）
 <img src="./images/server_over.png" width="400px">
 
 - 服务器web  
-<img src="./images/MtENP_web.png" >
+<img src="./images/MtENP_web.png" width="500px">
 <hr />
 
 <br />
