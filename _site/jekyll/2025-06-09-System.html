@@ -1,0 +1,684 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head><meta charset="UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>系统配置 · ALRCMt个人网站</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<meta name="description" content="ALRCMt build Jekyll site with the GitBook style now.
+"><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="ALRCMt"><link rel="stylesheet" href="/assets/gitbook/style.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-fontsettings/website.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-search-pro/search.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-splitter/splitter.css">
+
+<link rel="stylesheet" href="/assets/gitbook/rouge/molokai.css">
+
+<link rel="stylesheet" href="/assets/gitbook/custom.css">
+<link rel="stylesheet" href="/assets/gitbook/custom-local.css">
+
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/gitbook/images/apple-touch-icon-precomposed-152.png">
+<link rel="shortcut icon" href="/./images/fav.ico" type="image/x-icon">
+
+
+
+<script>
+  // 检查是否已经存在字体设置
+  if (!localStorage.getItem(':fontState')) {
+    // 如果不存在，则设置为深色模式
+    var defaultState = {
+      size: 2,
+      family: 1,
+      theme: 2
+    };
+    localStorage.setItem(':fontState', JSON.stringify(defaultState));
+  }
+</script>
+            <link rel="prev" href="/jekyll/2025-06-08-Others.html" />
+        
+
+        
+            <link rel="next" href="/jekyll/2025-06-10-Apply.html" />
+        
+    </head>
+    <body>
+        <div class="book"><div class="book-summary">
+    <script type="text/javascript">
+        // Fixes the page links scroll problem on both desktop and mobile browsers
+        function pageScrollToTop(element) {
+            // both mobile and non-mobile
+            $('div.body-inner').animate({scrollTop: 0});
+            $(element).parent().find('li>ul>li').removeClass('active');
+            return true;  // propagate
+        }
+        // Fixes the anchor links scroll problem on mobile browsers
+        function mobilePageScrollToAnchor(element) {
+            $(element).closest('li.chapter').find('ul>li').removeClass('active');
+            $(element).parent().addClass('active');
+            if ($(document).width() <= 1240) {
+                let target = $($(element).attr('href'));
+                if (target.length) {
+                    $('div.body-inner').animate({
+                        scrollTop: target.get(0).offsetTop,
+                    });
+                }
+            }
+            return true;
+        }
+    </script>
+
+    <nav role="navigation">
+        <div id="book-search-input" role="search">
+            <input type="text" placeholder="Type to search" />
+        </div>
+        <div id="book-search-input-link" role="search">
+            <a href="/assets/search.html">Click to Search</a>
+        </div>
+        <ul class="summary">
+            
+            <li class="chapter" data-level="1.1" data-path="">
+            
+                <a href="/" onclick="pageScrollToTop(this)">
+                    ALRCMt个人网站
+                </a>
+                
+                    
+                
+            </li>
+
+            <li class="divider"></li>
+
+            
+                
+                    
+                    <!-- <p>posts</p> -->
+                    
+                        
+
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/jekyll/2025-06-06-About.html">
+                            
+                                <a href="/jekyll/2025-06-06-About.html" onclick="pageScrollToTop(this)">
+                                    MtAIO系统介绍及指南
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/jekyll/2025-06-07-HandWare.html">
+                            
+                                <a href="/jekyll/2025-06-07-HandWare.html" onclick="pageScrollToTop(this)">
+                                    硬件选择
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/jekyll/2025-06-08-Others.html">
+                            
+                                <a href="/jekyll/2025-06-08-Others.html" onclick="pageScrollToTop(this)">
+                                    其他条件
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter active" data-level="1.2" data-path="/jekyll/2025-06-09-System.html">
+                            
+                                <a href="/jekyll/2025-06-09-System.html" onclick="pageScrollToTop(this)">
+                                    系统配置
+                                </a>
+                                
+                                    
+                                        <ul><li><a href="#安装-proxmox-virtual-environment" onclick="mobilePageScrollToAnchor(this)" >安装 Proxmox Virtual Environment</a></li><li><a href="#安装-truenas-scale" onclick="mobilePageScrollToAnchor(this)" >安装 TrueNAS scale</a></li><li><a href="#安装-ubuntu-server" onclick="mobilePageScrollToAnchor(this)" >安装 Ubuntu Server</a></li><li><a href="#安装-windows10-不需要" onclick="mobilePageScrollToAnchor(this)" >安装 Windows10 <em>不需要</em></a></li></ul>
+
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/jekyll/2025-06-10-Apply.html">
+                            
+                                <a href="/jekyll/2025-06-10-Apply.html" onclick="pageScrollToTop(this)">
+                                    应用配置
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/jekyll/2025-06-11-LoveFormMe.html">
+                            
+                                <a href="/jekyll/2025-06-11-LoveFormMe.html" onclick="pageScrollToTop(this)">
+                                    注意事项
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+
+                        
+                            <li class="divider"></li>
+                        
+                    
+                
+                    
+                    <!-- <p>pages</p> -->
+                    
+                        
+
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/pages/Aid/">
+                            
+                                <a href="/pages/Aid/" onclick="pageScrollToTop(this)">
+                                    阅读学习
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/pages/HMR/">
+                            
+                                <a href="/pages/HMR/" onclick="pageScrollToTop(this)">
+                                    HMR项目
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/pages/ShitFucking/">
+                            
+                                <a href="/pages/ShitFucking/" onclick="pageScrollToTop(this)">
+                                    垃圾话
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+
+                        
+                            <li class="divider"></li>
+                        
+                    
+                
+                    
+                    <!-- <p>others</p> -->
+                    
+                        
+
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/others/Apache2/">
+                            
+                                <a href="/others/Apache2/" onclick="pageScrollToTop(this)">
+                                    License
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+                            
+                            <li class="chapter" data-level="1.1" data-path="/others/Me/">
+                            
+                                <a href="/others/Me/" onclick="pageScrollToTop(this)">
+                                    关于ALRCMt
+                                </a>
+                                
+                                    
+                                
+                            </li>
+                        
+
+                        
+                            <li class="divider"></li>
+                        
+                    
+                
+            
+        </ul>
+    </nav>
+</div>
+<div class="book-body">
+                <div class="book-header" role="navigation">
+                    <!-- Title -->
+                    <h1>
+                        <i class="fa fa-circle-o-notch fa-spin"></i>
+                        
+                            <a href="." >系统配置</a>
+                        
+                    </h1>
+                </div>
+
+                <div class="body-inner"><div class="page-wrapper" tabindex="-1" role="main">
+    
+
+    <div class="page-inner">
+        <div id="book-search-results">
+            <div class="search-noresults">
+                <section class="normal markdown-section">
+                    
+                        <h1 id="/jekyll/System">系统配置</h1>
+                    
+
+                    <p><strong>参考<a href="https://github.com/firemakergk/aquar-build-helper?tab=readme-ov-file#%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85">@生火人 firemaker</a></strong>
+<strong>主要是以下系统的安装与配置</strong></p>
+
+<ul>
+  <li><a href="#%E5%AE%89%E8%A3%85-proxmox-virtual-environment"><strong>Proxmox Virtual Environment</strong></a></li>
+  <li><a href="#%E5%AE%89%E8%A3%85-truenas-scale"><strong>TrueNAS scale</strong></a></li>
+  <li><a href="#%E5%AE%89%E8%A3%85-ubuntu-server"><strong>Ubuntu Server</strong></a>
+    <blockquote>
+      <p>特殊安装：<a href="#%E5%AE%89%E8%A3%85-windows10-%E4%B8%8D%E9%9C%80%E8%A6%81"><strong>Windows10</strong></a><br />
+因为我的笔记本坏了一段时间，又没有别的电脑，刚好有一块多的 m.2 硬盘<br />
+于是我额外安装了 win10 系统在这块硬盘上，它与 PVE 是独立的</p>
+    </blockquote>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<h2 id="安装-proxmox-virtual-environment">安装 Proxmox Virtual Environment</h2>
+
+<p><strong>1.下载镜像</strong></p>
+
+<p>pve 的镜像官网下载页面：https://www.proxmox.com/en/downloads/category/iso-images-pve</p>
+
+<p><del>直接下载最新版本即可</del>推荐 8.x 版本，9.x 版本 BUG 太 ™ 多了</p>
+
+<p><strong>2.制作启动盘</strong></p>
+
+<p>推荐使用 Etcher 制作启动盘，你要用 Rufus 也随便</p>
+
+<p>Etcher 下载地址：<a href="https://pve.proxmox.com/pve-docs/pve-admin-guide.html#installation_prepare_media">https://pve.proxmox.com/pve-docs/pve-admin-guide.html#installation_prepare_media</a></p>
+
+<p><strong>3.安装 PVE</strong></p>
+
+<p>将启动盘插入物理机，重启进入 BIOS（进 bios 哪个键自己网上搜对应主板去），选择从启动盘启动，然后进入安装流程</p>
+
+<p>安装过程中 pve 会让你设置一个域名，并不关键，按默认即可</p>
+
+<p>安装流程的官方文档：https://pve.proxmox.com/pve-docs/pve-admin-guide.html#installation_installer</p>
+
+<p>安装过程中卡死？解决方法：<a href="#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9">PVE 安装时卡死</a></p>
+
+<p><strong>4.验证安装</strong></p>
+
+<p>PVE 安装完成后，首先在你的物理机屏幕上会显示出服务的 IP 地址（大概类似<a href="https://youripaddress:8006/">https://192.168.X.XXX:8006/</a>)，注意是 https 协议，在局域网下打开这个地址，你就可以看到 PVE 的 WEB 控制台了</p>
+
+<p><img src="./photo/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-08-09%20110507.png" alt="" /></p>
+
+<p>默认用户是 root，密码是你安装时设置的，语言设置为中文</p>
+
+<p><br /></p>
+
+<h2 id="安装-truenas-scale">安装 TrueNAS scale</h2>
+
+<p>TrueNAS scale 相较于可以直接搭载 Docker 服务，虽然使用 PVE 这种虚拟化平台作为底层系统，但是 TrueNAS scale 能提供更多选择（其实就是我根本没看是 core 还是 scale</p>
+
+<p><strong>1.下载镜像</strong></p>
+
+<p>TrueNAS SCALE 的下载页面： https://www.truenas.com/download-truenas-community-edition</p>
+
+<p>刚进入时会提示你注册，点击右下角的 No Thanks 即可看到下载链接了。推荐直接下载最新版本即可。</p>
+
+<p><strong>2.上传镜像到 PVE</strong></p>
+
+<p>在左侧的树状图中选择 pve 节点的 local 存储，在右侧选择 ISO 镜像，然后点上传，上传你的在上一步下载的 TrueNAS scale ISO 文件。你可以提前下载后面两节需要用到的镜像，然后集中上传，这可以节省很多时间。</p>
+
+<p><strong>3.创建虚拟机</strong></p>
+
+<p>在 pve 的 web 页面的右上角点击创建虚拟机，为 TrueNAS 创建一个虚拟机。</p>
+
+<p>通用信息配置中勾选右下角的 Advanced，并把这个虚拟机设置为开机自启动，然后设置启动顺序为 1，等待时间 60(秒)，需要注意的是这里的等待时间指的是这台虚拟机开机后等待下一台虚拟机开机的时间，而不是他与上一台虚拟机开机的等待时间。<strong>设置合理的启动顺序和等待时间非常重要</strong>，否则会影响上层服务的存储池挂载</p>
+
+<p><img src="./photo/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-08-09%20030601.png" alt="" width="700px" /></p>
+
+<p>操作系统配置页面选择你上传的 TrueNAS IOS 镜像，并设置操作系统类型为 Other</p>
+
+<p><img src="./photo/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-08-09%20030634.png" alt="" width="700px" /></p>
+
+<p>系统配置页面我的配置如下：</p>
+
+<p><img src="./photo/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-08-09%20030653.png" alt="" width="700px" /></p>
+
+<p>系统磁盘空间我分配了 32G，其他配置项没有需要修改的地方</p>
+
+<p><img src="./photo/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-08-09%20030701.png" alt="" width="700px" /></p>
+
+<p>CPU 分配了 2 核，另外 CPU 类型选择了 host，在单机情况下这样设置可以获得最小性能损耗</p>
+
+<blockquote>
+  <p><em>在 8.x 版本的系统中，如果使用的是混合架构的 CPU 如 12 代 i7，可以直接在界面的 CPU Affinity 设置中指定绑定的 CPU 序号</em><br />
+<em>查看 CPU 多核类别的方法是使用<code class="language-plaintext highlighter-rouge">lscpu -e</code>命令，可以看到 E 核的 MAXMHZ 会低于 P 核</em><br />
+<em>（这里我并没有这么配置，所以我不太清楚具体配置）</em></p>
+</blockquote>
+
+<p><img src="./photo/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-08-09%20030809.png" alt="" width="700px" /></p>
+
+<p>内存方面由于 TrueNAS 推荐使用 16G 以上内存空间，但是我总共只有 16G 内存，所以分配了 8G，可以正常使用</p>
+
+<p><img src="./photo/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-08-09%20030759.png" alt="" width="700px" /></p>
+
+<p>网络方面我暂时修改默认配置，以后应该可以将网络类型换成 VirtlIO 以提升性能</p>
+
+<p>进入到确认页面后点击创建就可以了</p>
+
+<p><img src="./photo/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-08-09%20030836.png" alt="" width="700px" /></p>
+
+<p>虚拟机创建成功后，打开他的 console 应该就可以看到安装提示了。</p>
+
+<p><strong>4.安装 TrueNAS SCALE</strong></p>
+
+<p>推荐教程 https://post.smzdm.com/p/a6d8m6vg/</p>
+
+<p>官方文档：https://www.truenas.com/docs/scale/25.04/gettingstarted/install/</p>
+
+<p>由于在一些 USB 设备连接不稳定的情况下，TrueNAS 虚拟机会收到 USB 热插拔的影响而死机，所以安装完成以后打开虚拟机的 Options（选项）页，双击 Hotplug（热拔插）设置项，把 USB 选项的勾选去掉。</p>
+
+<p><strong>5.验证安装</strong></p>
+
+<p>TrueNAS 安装成功后在局域网中使用浏览器打开提示中的地址应该就可以看到 TrueNAS 的 Web 页面了</p>
+
+<p><img src="./photo/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-08-09%20030930.png" alt="" /></p>
+
+<p>默认用户名是 truenas_admin，密码是在安装时设置</p>
+
+<p><br /></p>
+
+<h2 id="安装-ubuntu-server">安装 Ubuntu Server</h2>
+
+<p><strong>1.下载镜像</strong></p>
+
+<p>由于我们使用 ubuntu 的作用主要是承载各种服务而非直接与之交互，所以选择没有 GUI 的 Ubuntu Server 版本。</p>
+
+<p>Ubuntu Server 下载页面：https://cn.ubuntu.com/download/server/step1</p>
+
+<p>选择最新的 LTS 版本即可</p>
+
+<p><strong>2.上传镜像</strong></p>
+
+<p>与 TrueNAS 章节的上传操作一致，不再重复</p>
+
+<p><strong>3.创建虚拟机</strong></p>
+
+<p>与 TrueNAS 章节的创建操作类似，内存我分配了 4GB</p>
+
+<p><strong>4.安装 Ubuntu Server</strong></p>
+
+<p>推荐教程：https://blog.csdn.net/FungLeo/article/details/148370828</p>
+
+<p>Ubuntu Server 官方文档的安装指引：https://ubuntu.com/server/docs/install/step-by-step</p>
+
+<p>安装时有几点需要注意：</p>
+
+<ol>
+  <li>Mirror 设置时，Ubuntu 现在默认为国内源地址，如果不是的话请更换成你所在的地区最稳定的地址</li>
+  <li>ubuntu 安装默认只占用一半空间，需自己勾选上 <em><a href="#05ubuntu-%E7%A9%BA%E9%97%B4%E4%BB%85%E5%8D%A0%E7%94%A8%E4%B8%80%E5%8D%8A">已经安装完成？补救方法</a></em></li>
+  <li>SSH 设置时勾选 Install SSH Server</li>
+  <li>Snaps 页面不要选择任何软件进行安装</li>
+  <li>在 Ubuntu 安装开始执行一段时间后（大概几分钟），会开始拉取软件源信息，没必要等待，直接选择”跳过并重启”即可</li>
+</ol>
+
+<p><strong>5.验证安装</strong></p>
+
+<p>在 PVE 中找到 Ubuntu 的虚拟机，并进入 Console 界面，多按动几次回车键，如果看到类似的提示，则输入你安装时设置的用户名和密码。如果登录成功则说明系统正常运行了</p>
+
+<p><img src="./photo/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-08-09%20122037.png" alt="" /></p>
+
+<h2 id="安装-windows10-不需要">安装 Windows10 <em>不需要</em></h2>
+<p><strong>1.下载镜像</strong></p>
+
+<p>Win10 iso 镜像下载地址：https://www.microsoft.com/zh-cn/software-download/windows10</p>
+
+<p><strong>2.制作启动盘</strong></p>
+
+<p>我这里使用微 PE 来做启动盘</p>
+
+<p>微 PE 下载地址：https://www.wepe.com.cn/download.html</p>
+
+<p>下载后启动应用写入 U 盘，再将已下载的 iso 镜像复制到 U 盘</p>
+
+<p><strong>3.安装 windows10</strong></p>
+
+<p>将启动盘插入物理机，开机进入 BIOS，选择从启动盘启动</p>
+
+<p>进 PE 后官方安装教程：https://www.wepe.com.cn/ubook/installtool.html</p>
+
+<p>安装后拔出硬盘，我这里不多赘述了</p>
+
+<p><strong>4.验证安装</strong></p>
+
+<p>安装完成后，开机 bios 调整引导硬盘顺序即可选择启动 win10 或 PVE</p>
+</section>
+            </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div></div>
+    </div>
+</div>
+
+<!-- introduce mathjax support -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [ ['$', '$'], ['\\(', '\\)'] ]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script
+  type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+<!-- introduce per-page mermaid support -->
+
+
+<!-- introduce mathjax support -->
+<script>
+    function fixes_chrome_anchors() {
+        let chrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        if (window.location.hash && chrome) {
+            setTimeout(function () {
+                var hash = window.location.hash;
+                window.location.hash = "";
+                window.location.hash = hash;
+            }, 300);
+        }
+    }
+
+    if (document.readyState === "loading") {
+        // Loading hasn't finished yet
+        document.addEventListener("DOMContentLoaded", fixes_chrome_anchors);
+    } else {
+        // `DOMContentLoaded` has already fired
+        fixes_chrome_anchors();
+    }
+</script>
+
+
+                        <a href="/jekyll/2025-06-08-Others.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 其他条件">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
+
+                    
+                        <a href="/jekyll/2025-06-10-Apply.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 应用配置">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    
+                </div>
+            </div>
+
+            <script>
+            var gitbook = gitbook || [];
+            gitbook.push(function() {
+                gitbook.page.hasChanged({
+    "page": {
+        "title": "Introduction",
+        "level": "1.1",
+        "depth": 1,
+        
+        "next": {
+            "title": "应用配置",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_posts/2025-06-10-Apply.md",
+            "ref": "_posts/2025-06-10-Apply.md",
+            "articles": []
+        },
+        
+        "dir": "ltr"
+    },    "config": {
+        "plugins": ["fontsettings", "highlight", "livereload", "lunr", "search", "sharing", "theme-default", "livereload"],
+        "styles": {
+            "ebook": "styles/ebook.css",
+            "epub": "styles/epub.css",
+            "mobi": "styles/mobi.css",
+            "pdf": "styles/pdf.css",
+            "print": "styles/print.css",
+            "website": "styles/website.css"
+        },
+        "pluginsConfig": {
+            "expandable-chapter-small2": {
+                "articlesExpand": true,
+            },
+            "fontsettings": {
+                "family": "sans",
+                "size": 2,
+                "theme": "white"
+            },
+            "highlight": {},
+            "livereload": {},
+            "lunr": {
+                "ignoreSpecialCharacters": false,
+                "maxIndexSize": 1000000
+            },
+            "search": {},            "sharing": {
+                "facebook": true,
+
+                "google": false,
+
+                "github": true,
+              
+                "github_link": "https://github.com",
+              
+
+                "telegram": false,
+                "telegram_link": "https://t.me",
+
+                "instapaper": false,
+
+                "twitter": true,
+              
+
+                "vk": false,
+
+                "weibo": false,
+
+                "all": ["facebook", "google", "twitter", "weibo", "instapaper", "github", "telegram"]
+            },
+"theme-default": {
+                "showLevel": false,
+                "styles": {
+                    "ebook": "styles/ebook.css",
+                    "epub": "styles/epub.css",
+                    "mobi": "styles/mobi.css",
+                    "pdf": "styles/pdf.css",
+                    "print": "styles/print.css",
+                    "website": "styles/website.css"
+                }
+            },
+        },
+        "theme": "default",
+        "author": "Tao He",
+        "pdf": {
+            "pageNumbers": true,
+            "fontSize": 12,
+            "fontFamily": "Arial",
+            "paperSize": "a4",
+            "chapterMark": "pagebreak",
+            "pageBreaksBefore": "/",
+            "margin": {
+                "right": 62,
+                "left": 62,
+                "top": 56,
+                "bottom": 56
+            }
+        },
+        "structure": {
+            "langs": "LANGS.md",
+            "readme": "README.md",
+        },
+        "variables": {},
+        "title": "ALRCMt个人网站",
+        "language": "en",
+        "gitbook": "*"
+    },
+    "file": {
+        "path": "_posts/2025-06-09-System.md",
+        "mtime": "2025-06-09 00:00:00 +0800",
+        "type": "markdown"
+    },
+    "gitbook": {
+        "version": "3.2.3",
+        "time": "2025-10-02 11:33:19 +0800"
+    },
+    "basePath": "",
+    "book": {
+        "language": ""
+    }
+});
+            });
+            </script>
+        </div><script src="/assets/gitbook/gitbook.js"></script>
+<script src="/assets/gitbook/theme.js"></script>
+
+<script src="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-search-pro/search.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-sharing/buttons.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-splitter/splitter.js"></script>
+
+<!--
+<script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+<script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search.js"></script>
+-->
+
+<script src="/assets/gitbook/custom.js"></script>
+<script src="/assets/gitbook/custom-local.js"></script>
+
+</body>
+</html>
