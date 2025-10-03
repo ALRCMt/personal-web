@@ -27,7 +27,8 @@ layout: post
 
 <hr />
 
-> 本网站的GitHub开源仓库    
-[![ALRCMt Card](https://github-readme-stats.vercel.app/api/pin?username=ALRCMt&repo=personal-web&theme=react&show_owner=true)](https://github.com/ALRCMt/personal-web)
+> 本网站的GitHub开源仓库  [![GitHub](https://img.shields.io/badge/GitHub-ALRCMt-black.svg)](https://github.com/ALRCMt/personal-web)  
+[![WEB Card](https://github-readme-stats.vercel.app/api/pin?username=ALRCMt&repo=personal-web&theme=react&show_owner=true)](https://github.com/ALRCMt/personal-web)
+
 
 

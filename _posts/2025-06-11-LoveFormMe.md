@@ -8,7 +8,7 @@ layout: post
 
 
 以下为我实际搭建过程中的一些“小问题”（并不）和小巧思
-<br />
+<hr />
 
 ## 01.PVE 安装时卡死
 
@@ -101,6 +101,8 @@ acpitz-acpi-0：主板温度信息
 
 nvme-pci-0200：nvme 固态硬盘温度（如果有安装的话）普通的 sata 固态硬盘不会显示
 
+- 如果你不是AMD的CPU就继续看这个：[https://www.dgpyy.com/archives/205/](https://www.dgpyy.com/archives/205/)
+
 最气人的是不知道为什么我这里死活不显示 CPU 各核心温度，所以其他我也懒得配置了，平时使用
 
 ```shell
@@ -117,7 +119,7 @@ sensors
 > Tctl/Tdie 是 CPU 为降温虚标的高温，目的是使风扇转速加快  
 > 详细见 https://ngabbs.com/read.php?tid=42423467&rand=200
 
-<img src="./photo/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-08-09%20224901.png" alt="" width="700px"/>
+<img src="https://github.com/ALRCMt/MtAIO-Build/raw/main/photo/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-08-09%20224901.png" alt="" width="700px"/>
 
 ## 05.Ubuntu 空间仅占用一半
 
@@ -149,8 +151,8 @@ pve 的"更新>存储库"页面报错出现 "\u{200b}" 的字样
 不知道为什么PVE运行一段时间会莫名其妙崩溃，且系统日志没有记录  
 事后调查发现是**AMD Ryzen 1700X（初代锐龙/Zen 1）启用了C6 State模式自动节能卡死**  
 参考文献：  
-https://blog.csdn.net/qq_33026779/article/details/145600293  
-https://forum.proxmox.com/threads/pve-6-raidz2-freeze-every-day-ryzen-7-1700.66629/  
+[https://blog.csdn.net/qq_33026779/article/details/145600293](https://blog.csdn.net/qq_33026779/article/details/145600293)  
+[https://forum.proxmox.com/threads/pve-6-raidz2-freeze-every-day-ryzen-7-1700.66629/](https://forum.proxmox.com/threads/pve-6-raidz2-freeze-every-day-ryzen-7-1700.66629/)  
 
 解决方法：进入主板bios，将**Global C-State Control**设置为disabled
 
@@ -209,17 +211,32 @@ cpupower -c all frequency-set -g powersave
 # 设置所有CPU为性能模式
 cpupower -c all frequency-set -g performance
 ```
-	
-|  电源模式  | 解释说明 |
-|  ----  | ----  |
-| performance  | 性能模式，将 CPU 频率固定工作在其支持的较高运行频率上，而不动态调节 |
-| userspace  | 系统将变频策略的决策权交给了用户态应用程序，较为灵活 |
-| powersave  | 省电模式，CPU 会固定工作在其支持的最低运行频率上 |
-| ondemand  | 按需快速动态调整 CPU 频率，没有负载的时候就运行在低频，有负载就高频运行 |
-| conservative  | 与 ondemand 不同，平滑地调整 CPU 频率，频率的升降是渐变式的，稍微缓和一点 |
-| schedutil  | 负载变化回调机制，后面新引入的机制，通过触发 schedutil sugov_update 进行调频动作 |
-``` shell
+<table>
+<tr>
+<th>电源模式</th><th>解释说明</th>
+</tr>
+<tr>
+<th>performance</th><th>性能模式，将 CPU 频率固定工作在其支持的较高运行频率上，而不动态调节</th>
+</tr>
+<tr>
+<th>userspace</th><th>系统将变频策略的决策权交给了用户态应用程序，较为灵活</th>
+</tr>
+<tr>
+<th>powersave</th><th>省电模式，CPU 会固定工作在其支持的最低运行频率上</th>
+</tr>
+<tr>
+<th>ondemand</th><th>按需快速动态调整 CPU 频率，没有负载的时候就运行在低频，有负载就高频运行</th>
+</tr>
+<tr>
+<th>conservative</th><th>与 ondemand 不同，平滑地调整 CPU 频率，频率的升降是渐变式的，稍微缓和一点</th>
+</tr>
+<tr>
+<th>schedutil</th><th>负载变化回调机制，后面新引入的机制，通过触发 schedutil sugov_update 进行调频动作</th>
+</tr>
+</table>	
 
+
+``` shell
 # 我这里设置CPU电源策略为模式conservative
 cpupower -c all frequency-set -g conservative
 

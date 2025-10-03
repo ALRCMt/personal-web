@@ -18,4 +18,7 @@ cover: \images\hero.gif
 
 <img src="/images/jianyu.png" alt="SM" >
 
-还有某位身份证尾号**3218**的人物噢，你永远是最唐的唐太宗
+还有某位尾号**3218**的人物噢，你永远是最唐的唐太宗
+
+> 胆小慎入，点击即听，别哭，你也过不了第二秒  
+> <audio controls><source src="/images/hongxuansb.m4a" type="audio/mp3"></audio>
