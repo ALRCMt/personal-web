@@ -20,7 +20,7 @@ layout: post
 
 <hr />
 
-[![ALRCMt's GitHub stats](https://github-readme-stats.vercel.app/api?username=ALRCMt&rank_icon=percentile&theme=radical)](https://github.com/ALRCMt/personal-web)
+[![ALRCMt's GitHub stats](https://github-readme-stats.vercel.app/api?username=ALRCMt&rank_icon=percentile&theme=radical)](https://github.com/ALRCMt)
 
 ![](http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=ALRCMt&theme=ayu_mirage&utcOffset=8)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ALRCMt&layout=compact&theme=slateorange)
