@@ -1,5 +1,6 @@
 ---
 layout: home
+mermaid: true
 title: 主页
 permalink: /
 ---
@@ -68,3 +69,64 @@ Ctrl+C太好用了你知道吗 （哎\u{200b}怎么这么坏）
 
 <br />
 
+
+<b>我家稀烂的网络结构(目前)</b>
+
+```mermaid
+flowchart TD
+    subgraph A [“二楼网络”]
+        direction TB
+        A1[“互联网</br>（光纤接入）”]
+        A2[“光猫兼主路由</br>HS8546V5</br>路由模式</br>IP: 192.168.1.1”]
+        A3[“光猫自带WiFi</br>SSID: CMCC-XXX”]
+        
+        A1 -- 光纤 --> A2
+        A2 -- 无线 --> A3
+    end
+
+    subgraph B [“三楼网络”]
+        direction TB
+        B1[“三楼路由器</br>R300A</br>NAT模式</br>LAN IP: 10.168.1.1”]
+        B2[“三楼WiFi</br>（由R300A提供）”]
+        B3[“PVE 服务器</br>IP: 10.168.1.217”]
+        B4[“蒲公英组网服务</br>（基于R300A网络）”]
+        
+        B1 -- 无线 --> B2
+        B1 -- 有线 --> B3
+        B1 -- 网络连接 --> B4
+    end
+
+    A2 -- “网线</br>（光猫LAN口 → R300A WAN口）” --> B1
+
+```
+<b>计划网络结构</b>
+```mermaid
+flowchart TD
+    subgraph A [“二楼: 光猫层”]
+        direction TB
+        A1[“互联网</br>（光纤接入）”]
+        A2[“HS8546V5光猫</br>桥接模式</br>管理IP: 192.168.1.1”]
+        A3[“光猫自带WiFi</br>通过单线复用启用”]
+        A1 -- 光纤 --> A2
+        A2 -- 无线 --> A3
+    end
+
+    subgraph C [“三楼: 主路由及设备层”]
+        direction TB
+        C1[“主路由 RAX3000M</br>PPPoE拨号</br>WAN: 获取公网IP</br>LAN: 如 192.168.10.1”]
+        C2[“PVE 服务器</br>IP: 192.168.10.x</br>（需获取IPv6）”]
+        C1 -- 有线连接 --> C2
+    end
+
+    B[“单根网线</br>（单线复用）”]
+
+    A2 -- “承载:</br>- RAX3000M拨号数据</br>- 光猫WiFi回程数据” --> B
+    B --> C1
+
+    D[“IPv6数据流</br>（穿透至PVE）”]
+
+    A1 -.->|分配IPv6前缀| A2
+    A2 -.->|桥接IPv6| C1
+    C1 -.->|路由/分配IPv6| C2
+    
+```
