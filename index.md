@@ -86,7 +86,7 @@ flowchart TD
 
     subgraph B [“三楼网络”]
         direction TB
-        B1[“三楼路由器</br>R300A</br>NAT模式</br>LAN IP: 10.168.1.1”]
+        B1[“三楼路由器</br>R300A</br>转发模式</br>LAN IP: 10.168.1.1”]
         B2[“三楼WiFi</br>（由R300A提供）”]
         B3[“PVE 服务器</br>IP: 10.168.1.217”]
         B4[“蒲公英组网服务</br>（基于R300A网络）”]
@@ -118,7 +118,7 @@ flowchart TD
         C1 -- 有线连接 --> C2
     end
 
-    B[“单根网线</br>（单线复用）”]
+    B[“单根网线</br>（VLAN单线复用）”]
 
     A2 -- “承载:</br>- RAX3000M拨号数据</br>- 光猫WiFi回程数据” --> B
     B --> C1
